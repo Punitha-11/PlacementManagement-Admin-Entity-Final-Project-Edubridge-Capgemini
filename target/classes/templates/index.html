@@ -1,0 +1,47 @@
+
+
+<!Doctype Html>  
+<Html>     
+<Head>      
+<Title>     
+Admin  
+</Title>  
+
+<style>
+.topnav {
+  overflow:hidden;
+         
+         }
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:grey;
+  color: black;
+  font-family: cursive;
+  
+}
+</style>
+
+ <div class="topnav">
+      <a href="/">Home</a>
+      <a href="#">Placement </a>
+       <a href="#">Student</a>
+      <a href="#">College </a><br><br>
+      <body style="background-image: url(https://thumbs.dreamstime.com/z/miniature-people-supervisors-look-employees-job-placement-using-as-background-choice-best-suited-employee-hr-hrm-hrd-141682448.jpg);">
+      <center>
+   <h1 style="color:blue;"><b>Welcome to Placement Management Application</b></h1><BR>
+   <p> You are Successfully Logged in!!!</p> 
+    <form th:action="@{/logout}" method="post">
+        <input type="submit"  value="Logout" /></form>   </center>
+        </body>
+       
+</Html>
