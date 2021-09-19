@@ -1,47 +1,35 @@
 
 
-<!Doctype Html>  
-<Html>     
-<Head>      
-<Title>     
-Admin  
-</Title>  
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
 <style>
-.topnav {
-  overflow:hidden;
-         
-         }
-
-/* Navbar links */
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color:grey;
-  color: black;
-  font-family: cursive;
-  
+.style1 {
+ 
+  padding: 100px;
+  background: url(https://cdn.pixabay.com/photo/2014/10/08/09/01/career-479578_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: 1150px 650px;
 }
 </style>
 
- <div class="topnav">
-      <a href="/">Home</a>
-      <a href="#">Placement </a>
-       <a href="#">Student</a>
-      <a href="#">College </a><br><br>
-      <body style="background-image: url(https://thumbs.dreamstime.com/z/miniature-people-supervisors-look-employees-job-placement-using-as-background-choice-best-suited-employee-hr-hrm-hrd-141682448.jpg);">
-      <center>
-   <h1 style="color:blue;"><b>Welcome to Placement Management Application</b></h1><BR>
-   <p> You are Successfully Logged in!!!</p> 
-    <form th:action="@{/logout}" method="post">
-        <input type="submit"  value="Logout" /></form>   </center>
-        </body>
-       
-</Html>
+</head>
+<body >
+<div class=style1>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+
+   <h1><b style="color:Skyblue;">Welcome!!!</b></h1><br>
+   <h2><B style="color:maroon;" > PLACEMENT MANAGEMENT </b></h1><BR>
+   
+   <b style="color:white">PLACEMENT DETAILS</b> &nbsp;&nbsp;&nbsp;<a th:href="@{'/placementindex'}"><input type="submit" class="btn btn-info" value="Open" /></a><br><br><br>
+   <b style="color:white">COLLEGE DETAILS</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a th:href="@{'/collegeindex'}"><input type="submit" class="btn btn-info" value="Open" /></a><br><br><br>
+   <b style="color:white">STUDENT DETAILS</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a th:href="@{'/studentindex'}"><input type="submit" class="btn btn-info" value="Open" /></a><br><br><br>
+   
+   <form th:action="@{/logout}" method="post">
+        <input type="submit"  value="Logout" />
+    </form>
+    </div>
+</body>
+</html>
